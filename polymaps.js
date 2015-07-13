@@ -1,3 +1,6 @@
+<!--Copyright (c) 2010, SimpleGeo and Stamen Design-->
+<!--All rights reserved.-->
+
 if (!org) var org = {};
 if (!org.polymaps) org.polymaps = {};
 (function(po){
