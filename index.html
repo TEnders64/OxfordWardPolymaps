@@ -44,7 +44,7 @@
 			
 			var map = po.map()
 						.center([-1.2375, 51.7551])
-						.container(#map.appendChild(po.svg('svg')))
+						.container(document.body.appendChild(po.svg('svg')))
 						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
 			
 			
