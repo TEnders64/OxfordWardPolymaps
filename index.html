@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<head>
-	<title>Using Polymaps for OX heatmap</title>
-	<script src="polymaps.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
-	<style>
-		
-		
-		
-	</style>
-</head>
-<body>
-	<div class="jumbotron">
-		<h1>Jumbotron</h1>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="info">
-			</div>
-			<div class="success">
+<html>
+	<head>
+		<title>Using Polymaps for OX heatmap</title>
+		<script src="polymaps.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+		<style>
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Jumbotron</h1>
 			</div>
 		</div>
-	</div>
-</body>
+		<div class="container">
+			<div class="row">
+				<div id="map" class="well well-lg col-md-6">
+				SVG WILL GO HERE!
+				</div>
+				<div class="col-md-6">
+					<div class="short-div">
+						<div class="panel panel-info">
+							<div class="panel-heading">Dates:</div>
+							<div class="panel-body" id="dates"></div>
+						</div>
+					</div>
+					<div class="short-div">
+						<div class="panel panel-success">
+							<div class="panel-heading">Bar graph?</div>
+							<div class="panel-body" id="bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var po = org.polymaps;
+			
+			var map = po.map()
+						.center([-1.2375, 51.7551])
+						.container(#map.appendChild(po.svg('svg')))
+						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
+			
+			
+			
+		</script>
+	</body>
+</html>
