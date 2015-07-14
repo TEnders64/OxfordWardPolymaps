@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 		<style>
-			#map {
+			svg {
 				width:500;
 				height:500;
 			}
@@ -51,7 +51,7 @@
 						.center({lat:51.7551, lon:-1.2375})
 						.zoom(12)
 						.zoomRange([12,18])
-						.size({x:svgWidth, y:svgHeight})						
+						.size({x:svgWidth, y:svgHeight})
 						.add(po.interact());
 					
 			map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
