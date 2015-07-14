@@ -12,13 +12,13 @@
 				width: 537px;
 				height: 500px;
 			}
-			
+					
 		</style>
 	</head>
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Jumbotron</h1>
+				<h1>Polymaps</h1>
 			</div>
 		</div>
 		<div class="container">
@@ -46,12 +46,16 @@
 		
 			var po = org.polymaps;
 			
+			var svg = po.svg("svg");
+				svg.setAttribute('width',svgWidth);
+				svg.setAttribute('height',svgHeight);
+			
 			var map = po.map()
-						.container(document.getElementById("map").appendChild(po.svg('svg')))
+						.container(document.getElementById("map").appendChild(svg))
 						.center({lat:51.7551, lon:-1.2375})
 						.zoom(10)
 						.zoomRange([10,18])
-						.size({x:537, y:500})
+						.size()
 						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'))
 						.add(po.interact());								
 			
