@@ -20,9 +20,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div id="map" class="well well-lg col-md-6">
-				SVG WILL GO HERE!
-				</div>
+				<div id="map" class="well well-lg col-md-6"></div>
 				<div class="col-md-6">
 					<div class="short-div">
 						<div class="panel panel-info">
@@ -47,10 +45,10 @@
 						.center({lat:51.7551, lon:-1.2375})
 						.zoom(12)
 						.zoomRange([12,18])
-						.resize()
+						.size()						
 						.add(po.interact());
 					
-					map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
+			map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
 			
 			
 			
