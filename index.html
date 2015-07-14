@@ -38,8 +38,8 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			var svgWidth = 500;
-			var	svgHeight = 300;
+			var svgWidth = 300;
+			var	svgHeight = 500;
 		
 			var po = org.polymaps;
 			
@@ -48,7 +48,7 @@
 						.center({lat:51.7551, lon:-1.2375})
 						.zoom(12)
 						.zoomRange([12,18])
-						.size({svgWidth, svgHeight})						
+						.size({x:svgWidth, y:svgHeight})						
 						.add(po.interact());
 					
 			map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
