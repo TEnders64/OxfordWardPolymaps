@@ -7,14 +7,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 		<style>		
-			.row {
-				height:100%;				
-			}
+						
 			
-			svg {
-				width:100%;
-				height:100%;
-			}			
 		</style>
 	</head>
 	<body>
@@ -43,7 +37,7 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			var svgWidth = 300;
+			var svgWidth = 537;
 			var	svgHeight = 500;
 		
 			var po = org.polymaps;
@@ -53,7 +47,7 @@
 						.center({lat:51.7551, lon:-1.2375})
 						.zoom(10)
 						.zoomRange([10,18])
-						//.size({x:svgWidth, y:svgHeight})
+						.size({x:svgWidth, y:svgHeight})
 						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'))
 						.add(po.interact());								
 			
