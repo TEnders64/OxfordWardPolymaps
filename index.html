@@ -43,9 +43,13 @@
 			var po = org.polymaps;
 			
 			var map = po.map()
-						.center([-1.2375, 51.7551])
-						.container(document.body.appendChild(po.svg('svg')))
-						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
+						.container(document.getElementById("map").appendChild(po.svg('svg')))
+						.center({lat:51.7551, lon:-1.2375})
+						.zoom(10)
+						.zoomRange([10,16])
+						.add(po.interact());
+					
+					map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
 			
 			
 			
