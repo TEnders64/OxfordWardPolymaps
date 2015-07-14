@@ -52,11 +52,9 @@
 						.zoom(12)
 						.zoomRange([12,18])
 						.size({x:svgWidth, y:svgHeight})
+						.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'))
 						.add(po.interact());
-					
-			map.add(po.geoJson().url('Jun_6_2013_OX_Boroughs.geojson'));
-			
-			
+								
 			
 		</script>
 	</body>
